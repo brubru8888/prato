@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Prato</title>
+  <style>
+    :root {
+      --bg: #f4f1eb;
+      --ink: #1c1c1c;
+      --muted: #5c574e;
+      --accent: #0f6e56;
+      --line: #e4dfd6;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      background: var(--bg);
+      color: var(--ink);
+      font-family: Inter, "Segoe UI", system-ui, sans-serif;
+      font-size: 18px;
+      line-height: 1.45;
+    }
+    main { width: min(640px, calc(100% - 32px)); }
+    h1 { margin: 0 0 8px; font-size: 40px; }
+    p { margin: 0; color: var(--muted); }
+    nav { display: grid; gap: 12px; margin-top: 28px; }
+    a {
+      display: block;
+      min-height: 48px;
+      padding: 16px 18px;
+      background: white;
+      color: var(--ink);
+      text-decoration: none;
+      border: 1px solid var(--line);
+      border-radius: 16px;
+    }
+    a strong { display: block; color: var(--accent); }
+    :focus-visible { outline: 3px solid #0b3d31; outline-offset: 2px; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Prato</h1>
+    <p>As duas versões do front-end. A interface está como o modelo entregou.</p>
+    <nav>
+      <a href="prato/index.html"><strong>Celular</strong> Aplicativo no formato de telefone</a>
+      <a href="prato-web/index.html"><strong>Web</strong> A mesma proposta na largura da tela</a>
+    </nav>
+  </main>
+</body>
+</html>
